@@ -50,7 +50,7 @@
         uses: azure/arm-deploy@v1
         with:
           subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
-          resourceGroupName: ${{ secrets$AZURE_RG }}
+          resourceGroupName: ${{ secrets.$AZURE_RG }}
           template: ./InfrastructureAsCode/main.bicep
           # Use the environment variable called targetEnv
           parameters: environment=$
