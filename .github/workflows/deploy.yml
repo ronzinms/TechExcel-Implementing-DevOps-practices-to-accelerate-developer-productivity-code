@@ -17,6 +17,10 @@
     build-and-deploy:
       # We run this on an Ubuntu-based GitHub hosted runner. This hosted runner
       # has certain software already installed, including az cli
+      permissions:
+          contents: read
+          pages: write
+          id-token: write 
       runs-on: ubuntu-latest
       steps:
       # Check out the code. This grabs code from the repository and
